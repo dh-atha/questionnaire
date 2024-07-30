@@ -13,6 +13,6 @@ class Response extends Model
 
     public function question()
     {
-        return $this->belongsTo(Questionnaire::class, 'id');
+        return $this->belongsTo(Questionnaire::class, 'questionnaire_id');
     }
 }
